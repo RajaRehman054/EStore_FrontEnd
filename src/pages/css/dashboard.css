@@ -1,0 +1,41 @@
+.card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin:20px
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background: #764abc;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #513282;
+}
+
+.new{
+    display:flex;
+    justify-content: center;
+}
+
+p{
+    color:darkgoldenrod;
+    margin-right:5px;
+    font-weight: bold;
+}
+
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:darkslateblue
+}
+
+
