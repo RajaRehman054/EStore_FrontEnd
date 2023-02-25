@@ -8,7 +8,18 @@ const cartSlice = createSlice({
 			state.push(action.payload);
 		},
 		remove(state, action) {
-			return state.filter(item => item.id !== action.payload);
+			var arr = [];
+			var check = false;
+			var j = 0;
+			for (let i = 0; i < state.length; i++) {
+				if (state[i].id === action.payload && !check) {
+					check = true;
+					continue;
+				}
+				arr[j] = state[i];
+				j++;
+			}
+			return (state = arr);
 		},
 		removeAll(state, action) {
 			return (state = []);
